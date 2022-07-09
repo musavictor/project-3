@@ -1,9 +1,4 @@
 version: 2.1
-
-
-
-
-
 orbs:
   slack: circleci/slack@4.9.3
 
@@ -320,7 +315,7 @@ jobs:
 #               # your code here
 #             fi
             
- notify_on_success:
+  notify_on_success:
   docker:
     - image: cimg/base:stable
   steps:
