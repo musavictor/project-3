@@ -124,7 +124,7 @@ jobs:
             npm audit --audit-level=critical
       - notify_on_failure
 
-  scan-backend:
+  scan-backtend:
     docker:
       - image: cimg/node:13.8.0
     steps:
@@ -132,7 +132,7 @@ jobs:
       - restore_cache:
           keys: [backend-deps]
       - run:
-          name: back-end Scan
+          name: backend Scan
           command: |
             cd backend
             npm install
